@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF5F2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="347dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="Tell Us About Yourself"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="111dp"
+                android:layout_height="122dp"
+                app:srcCompat="@drawable/zeerak"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="234dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/ubaid"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="111dp"
+                android:layout_height="122dp"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/tenille"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="111dp"
+                android:layout_height="122dp"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/ibrahim"
+                tools:layout_editor_absoluteX="232dp"
+                tools:layout_editor_absoluteY="320dp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="112dp"
+                android:layout_height="122dp"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/boy_and_girl"
+                tools:layout_editor_absoluteX="83dp"
+                tools:layout_editor_absoluteY="290dp" />
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="347dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="347dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="When Is Your Birthday"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+<!--    <HorizontalScrollView-->
+<!--        android:id="@+id/horizontalScrollView2"-->
+<!--        android:layout_width="411dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="3dp"-->
+<!--        android:layout_marginLeft="3dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView8">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="1"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="2"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="3"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="4"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="5"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="6"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="7"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="8"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="9"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="10"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="11"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="12"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="13"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="14"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="15"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="16"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="17"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="18"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="19"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="20"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="21"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="22"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="23"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="24"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="25"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="26"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="27"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="28"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="29"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="30"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="31"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+<!--        </LinearLayout>-->
+
+
+<!--    </HorizontalScrollView>-->
+
+<!--    <HorizontalScrollView-->
+<!--        android:id="@+id/horizontalScrollView3"-->
+<!--        android:layout_width="413dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="3dp"-->
+<!--        android:layout_marginLeft="3dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="January"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+
+<!--                android:text="February"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="march"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="April"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="May"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="June"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="July"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="August"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="September"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="October"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="November"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="December"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--        </LinearLayout>-->
+
+
+<!--    </HorizontalScrollView>-->
+
+<!--    <HorizontalScrollView-->
+<!--        android:id="@+id/horizontalScrollView4"-->
+<!--        android:layout_width="413dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="3dp"-->
+<!--        android:layout_marginLeft="3dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView3">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+
+<!--                android:text="1997"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="7dp"-->
+
+<!--                android:text="1998"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="1999"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2000"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2001"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2002"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2003"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2004"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2005"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2006"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2007"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2008"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2009"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2010"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2011"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2012"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2013"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2014"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2015"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2016"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2017"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="2018"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp" />-->
+
+<!--        </LinearLayout>-->
+
+
+<!--    </HorizontalScrollView>-->
+
+
+    <com.squareup.timessquare.CalendarPickerView
+        android:id="@+id/calendar"
+        android:layout_width="363dp"
+        android:layout_height="228dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+
+        android:background="@drawable/rouded_corner"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
